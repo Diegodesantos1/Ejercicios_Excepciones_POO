@@ -17,8 +17,8 @@ class Correo_electronico:
             time.sleep(1)
     def usuario():
         s=str(input("Usuario:\n"))
-        usuario = re.findall(r"^\w+",s)
-        print(usuario)
+        com1=re.search("@", s) ; com2=re.search(".com", s) ; com3=re.search(".es", s) ; com4=re.search(".org", s) ; com5=re.search(".org", s)
+        print(com1,com2,com3,com4,com5)
 
 Correo_electronico.comprobar_hora()
 Correo_electronico.usuario()
