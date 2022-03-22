@@ -30,4 +30,3 @@ class Correo_electronico:
 
 
 Correo_electronico.comprobar_hora()
-Correo_electronico.usuario()
