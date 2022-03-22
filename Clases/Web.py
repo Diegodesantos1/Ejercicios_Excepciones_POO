@@ -22,8 +22,9 @@ class Correo_electronico:
             print("Correo no válido, mantenga el formato xxx@xxx.xx\n")
             Correo_electronico.usuario()
         else:
-            usuario = re.sub("@gmail.com.es.orgyahoohotmail!","",correo_electronico)
-            print(f"Bienvenido {usuario}")
+            lista = correo_electronico.split("@")
+            usuario = lista.pop(0)
+            print(f"¡Bienvenido {usuario}!")
 
 
 Correo_electronico.comprobar_hora()
