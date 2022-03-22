@@ -20,7 +20,7 @@ class Correo_electronico:
     def usuario(contador):
         if contador < 2:
             correo_electronico = str(input("Introduzca su correo electrónico:\n"))
-            comprobacion=re.search("@......", correo_electronico)
+            comprobacion=(re.search(".*@.*\..*", correo_electronico))
             if comprobacion == None:
                 print("Correo no válido, mantenga el formato xxx@xxx.xx\n")
                 Correo_electronico.usuario(contador + 1)
