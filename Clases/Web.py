@@ -22,7 +22,7 @@ class Correo_electronico:
         while len(dominios):
             variable=dominios.pop(0)
             s=str(input("Correo electrónico:\n"))
-            comprobacion=re.search(f"@......{variable}", correo_electronico)
+            comprobacion=re.search(f"@......com", correo_electronico)
             if comprobacion == None:
                 Correo_electronico.usuario()
             else:
