@@ -16,9 +16,13 @@ class Correo_electronico:
             print("Buenas noches:\nIntroduzca un correo electrónico para acceder:")
             time.sleep(1)
     def usuario():
-        s=str(input("Usuario:\n"))
-        com1=re.search("@", s) ; com2=re.search(".com", s) ; com3=re.search(".es", s) ; com4=re.search(".org", s) ; com5=re.search(".org", s)
-        print(com1,com2,com3,com4,com5)
+        s=str(input("Correo electrónico:\n"))
+        comprobacion=re.search("@......com", s)
+        if comprobacion == None:
+            Correo_electronico.usuario()
+        else:
+            print(f"Bienvenido {s}")
+
 
 Correo_electronico.comprobar_hora()
 Correo_electronico.usuario()
