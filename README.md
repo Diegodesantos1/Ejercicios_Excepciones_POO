@@ -58,6 +58,7 @@ Correo_electronico.usuario(0)
 ```
 Su UML es el siguiente:
 
+![image](https://user-images.githubusercontent.com/91721855/159692536-197011bd-283b-4095-9e79-f33fcbb2f4ec.png)
 
 
 En formato [XML]()
